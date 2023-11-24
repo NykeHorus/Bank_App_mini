@@ -131,7 +131,6 @@ button:focus {
 
 .login-page {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
   background: linear-gradient(var(--primary), var(--primary-light));

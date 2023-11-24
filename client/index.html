@@ -72,9 +72,9 @@
 
     <!-- Dashboard page template-->
     <template id="dashboard">
-      <section>
-        <header>
-          <img class="login-logo" src="logo.png" alt=" Fair Banking Logo" />
+      <section class="dashboard-page">
+        <header class="dashboard-header">
+          <img class="dashboard-logo" src="logo.png" alt=" Fair Banking Logo" />
           <h1 class="dashboard-title hide-xs">Fair Banking</h1>
           <button onclick="logout()">Logout</button>
         </header>
@@ -104,7 +104,7 @@
         <div class="dialog-content">
           <h2 class="text-center">Add transaction</h2>
           <form id="transactionForm" action="javascript:void(0)">
-            <label>Date</label>
+            <label for="date">Date</label>
             <input id="date" name="date" type="date" required />
             <label for="object">Object</label>
             <input
@@ -126,7 +126,7 @@
             <div id="transactionError" class="error" role="alert"></div>
             <div class="dialog-buttons">
               <button
-                type="button"
+                type="submit"
                 class="button-alt"
                 formaction="javascript:cancelTransaction()"
                 formnovalidate
